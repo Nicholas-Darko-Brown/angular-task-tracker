@@ -1,0 +1,44 @@
+<form *ngIf="showAddTask" (ngSubmit)="onSubmit()" class="space-y-5 border px-2 py-4 border-black rounded">
+  <div class="">
+    <label for="task"
+      >Add Task
+      <input
+        [(ngModel)]="task"
+        id="task"
+        type="text"
+        name="task"
+        placeholder="Add task..."
+        class="w-full border border-black rounded p-2"
+      />
+    </label>
+  </div>
+  <div class="">
+    <label for="date"
+      >Date
+      <input
+        [(ngModel)]="date"
+        id="date"
+        type="date"
+        name="date"
+        class="w-full border border-black rounded p-2"
+      />
+    </label>
+  </div>
+  <div class="flex items-center w-full">
+    <label for="reminder" class="">Reminder</label>
+    <input
+      [(ngModel)]="reminder"
+      id="reminder"
+      type="checkbox"
+      name="reminder"
+      class="w-full rounded"
+    />
+  </div>
+  <div class="">
+    <input
+      type="submit"
+      value="Submit"
+      class="w-full bg-black text-white py-2 rounded cursor-pointer"
+    />
+  </div>
+</form>

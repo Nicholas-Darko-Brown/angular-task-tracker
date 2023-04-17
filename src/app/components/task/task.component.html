@@ -1,0 +1,9 @@
+<div class="">
+  <h2 (dblclick)="onRemindTask(task)" [class.border-l-4]="task.reminder" [class.border-green-600]="task.reminder" class="bg-gray-200 my-4  rounded px-2 py-1 flex justify-between items-center cursor-pointer">
+    <div class="">
+      <span class="font-bold">{{ task.task }}</span>
+      <p>{{ task.date }}</p>
+    </div>
+    <button (click)="onDeleteTask(task.id!)" class="text-red-600 bg-red-100 p-1 w-10">X</button>
+  </h2>
+</div>

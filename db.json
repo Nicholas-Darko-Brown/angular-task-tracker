@@ -1,0 +1,38 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "reminder": true,
+      "task": "Code Angular",
+      "date": "Mon 23 Apr, 2023"
+    },
+    {
+      "id": 2,
+      "reminder": false,
+      "task": "Eat after coding",
+      "date": "Wed 25 Apr, 2023"
+    },
+    {
+      "id": 3,
+      "reminder": true,
+      "task": "Sleep after coding",
+      "date": "Fri 27 Apr, 2023"
+    },
+    {
+      "id": 4,
+      "reminder": true,
+      "task": "Play snooker",
+      "date": "Mon 3 May, 2023"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

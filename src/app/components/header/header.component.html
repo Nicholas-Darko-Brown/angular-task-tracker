@@ -1,0 +1,7 @@
+<header class="w-full border border-black p-1 rounded">
+  <div class="flex justify-between items-center">
+    <h1 class="font-bold text-md sm:text-xl">{{ title }}</h1>
+
+    <app-button *ngIf="hasRoute('/')" (addClick)="toggleAddTask()" class="bg-black text-white px-4 rounded py-1" [ngClass]="{ 'bg-red-600': showAddTask }" buttonText="{{ showAddTask ? 'Close' : 'Add' }}"></app-button>
+  </div>
+</header>
